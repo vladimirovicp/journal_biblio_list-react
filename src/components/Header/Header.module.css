@@ -11,6 +11,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  padding: 0.85rem 0;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .brand {
