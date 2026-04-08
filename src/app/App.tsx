@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import MainLayout from '../components/MainLayout/MainLayout'
-import { ENVIRONMENT_URLS } from '../config/environments.js'
 import AboutPage from '../pages/About/AboutPage'
 import HomePage from '../pages/Home/HomePage'
+import { ENVIRONMENT_URLS } from '../shared/config/environments'
 
 const environmentUrls = ENVIRONMENT_URLS as Record<string, string | undefined>
 
