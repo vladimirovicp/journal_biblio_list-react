@@ -8,6 +8,8 @@ type EnvironmentSelectorProps = {
   label?: string
 }
 
+const NOT_SELECTED_LABEL = '\u041d\u0435 \u0432\u044b\u0431\u0440\u0430\u043d\u043e'
+
 const EnvironmentSelector = ({
   options,
   value,
@@ -33,11 +35,14 @@ const EnvironmentSelector = ({
         {options.length === 0 ? (
           <option value="">No environments</option>
         ) : (
-          options.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))
+          <>
+            <option value="">{NOT_SELECTED_LABEL}</option>
+            {options.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </>
         )}
       </select>
     </div>

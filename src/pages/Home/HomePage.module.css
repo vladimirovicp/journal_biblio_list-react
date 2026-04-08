@@ -27,6 +27,51 @@
   font-weight: 600;
 }
 
+.issueBlock {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.preload {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.error {
+  margin: 0;
+  color: #b42318;
+  font-weight: 600;
+}
+
+.issueSelectorWrapper {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.issueLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.issueSelect {
+  min-width: 220px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  padding: 0.45rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+.issueSelect:focus-visible {
+  outline: 2px solid #9db6ff;
+  outline-offset: 1px;
+}
+
 .text {
   margin: 0;
   max-width: 60ch;

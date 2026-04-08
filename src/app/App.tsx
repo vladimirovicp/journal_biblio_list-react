@@ -11,7 +11,7 @@ const App = () => {
   const environmentOptions = useMemo(() => Object.keys(environmentUrls), [])
 
   const [selectedEnvironment, setSelectedEnvironment] = useState<string>(
-    environmentOptions[0] ?? '',
+    '',
   )
 
   const selectedBaseUrl = selectedEnvironment
