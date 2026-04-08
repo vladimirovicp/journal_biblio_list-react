@@ -55,6 +55,10 @@ export const useJournalArticles = ({
         )
 
         if (!abortController.signal.aborted) {
+
+          console.log('Articles loaded for selected issue:', loadedArticles)
+
+          
           setArticles(loadedArticles)
           setHasLoadedArticles(true)
         }
@@ -88,4 +92,5 @@ export const useJournalArticles = ({
     hasLoadedArticles,
   }
 }
+
 

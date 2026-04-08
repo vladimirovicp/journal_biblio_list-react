@@ -209,6 +209,8 @@ const normalizeArticle = (item: unknown): JournalArticle | null => {
         ? nestedNode.title
         : null
 
+  
+
   const journalLinkValue =
     extractNestedScalarValue(source.field_journal_link) ??
     extractNestedScalarValue(nestedNode?.field_journal_link)
